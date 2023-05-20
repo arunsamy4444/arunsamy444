@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+
+    <title>
+        About
+    </title>
+    <style>
+        h1{
+            margin: 20px;
+        }
+        h2{
+            color:white;
+        }
+
+    </style>
+
+     <link rel="stylesheet" type="text/css" href="/styles.css">
+ 
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/" class="%= req.originalUrl==='/'? 'active':'' %>"> Home </a></li>
+                <li><a href="/About-me" class="%=req.originalUrl==='/About-me'? 'active':''%>"> About-me </a></li>
+                <li><a href="/MyBio" class="%=req.originalUrl==='/Mybio'? 'active':''%>"> MyBio </a></li>
+                <li><a href="/Contact-me"class="%=req.originalUrl==='/Contact-me'? 'active':''%>"> Contact-me </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1> This is a About page for my Portfolio Site ...</h1>
+
+    <ul> 
+        <li> <h3>Hey Hiii . I am Arun Samy V .</h3></li> 
+
+        <li><h3> I am CS student currently studying at Government College of Engineering , Bodinayakanur . </h3> </li>
+
+        <li> <h3>My native was Kallakurichi .</h3></li>
+
+        <li><h3>My school studies was completed at AKT school , kallakurichi .</h3> </li>
+
+
+    </ul>
+
+    <h2> Studies : </h2>
+
+    <table>
+
+        <tr>
+             <th>
+                 Standard
+             </th>
+
+             <th>
+                Marks
+            </th>
+
+        </tr>
+        <tr>
+
+       <td> 10th </td>
+       <td> 450/500</td>
+            
+        </tr>
+       
+        <tr>
+            <td> 11th </td>
+            <td> 410/600 </td>
+        </tr>
+       
+        <tr>
+            <td> 12th </td>
+            <td> 531/600 </td>
+        </tr>
+       
+    </table>
+
+    <h4> Well. My cut off was 177.89 </h4>
+    
+</body>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+
+    <title>
+        My Portfolio
+    </title>
+
+     <link rel="stylesheet" type="text/css" href="/styles.css">
+ 
+</head>
+
+<body>
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/" class="%= req.originalUrl==='/'? 'active':'' %>"> Home </a></li>
+                <li><a href="/About-me" class="%=req.originalUrl==='/About-me'? 'active':''%>"> About-me </a></li>
+                <li><a href="/MyBio" class="%=req.originalUrl==='/Mybio'? 'active':''%>"> MyBio </a></li>
+                <li><a href="/Contact-me"class="%=req.originalUrl==='/Contact-me'? 'active':''%>"> Contact-me </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <ul>
+
+        <h1> This is a Home Page for my Portfolio Site ...</h1> 
+
+    <li> <h3> Hey , hiiiii , I am Arun Samy V .</h3> </li>
+        
+    <li><h3>My Native was Kallakurichi district .</h3> </li>
+        
+    <li><h3>My school Journey was Started and Ended  at same school , which is A K T academy mat hr sec school .</h3></li>
+        
+    <li><h3>My age was 18 .</h3></li>
+
+   <li><h3> Well, I love to develop websites , by using MERN stack .</h3></li> 
+    
+    <li><h3> This site is developed by me . By using Express js Framework .</h3></li>
+        
+    </ul>
+
+</body>

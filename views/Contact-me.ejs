@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>
+        Contact
+    </title>
+
+    <style>
+        h1{
+            color: aliceblue;
+        }
+        h2{
+    color:khaki;
+}
+        .se{
+            margin:auto;
+            padding:10px;
+        }
+        @media(max-width:768px){
+        .form-container{
+            color:white;
+            width:300px;
+            margin:0 auto;
+            height: 20vh;
+            display: flex;
+            align-items: flex-start;
+            padding:20px;
+            border:1px solid #ccc;
+            background-color: rgb(124,221,169);
+            padding: 40px;
+            border-radius: 8px;
+            background-color: black;
+            font-family: sans-serif;
+        }
+        h1{
+            color: aliceblue;
+        }
+    form input,textarea{
+        width: 100%;
+        margin: 10px 0;
+    }
+    form input{
+        height: 30px;
+    }
+    .social-media{
+        margin :10px;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins',sans-serif;
+    }
+    h2{
+    font-family: 'Times New Roman', Times, serif;
+    color: darkturquoise;
+    padding: auto;
+}
+#arun{
+    height: 20px;
+    width:20px;
+}
+
+h2{
+    color:aliceblue;
+
+}
+        }
+        @media(max-width:480px){
+            .form-container{
+        color:white;
+        width:150px;
+        margin:0 auto;
+        height: 20vh;
+        display: flex;
+        align-items: flex-start;
+        padding:13px;
+        border:1px solid #ccc;
+        background-color: rgb(124,221,169);
+        padding: 20px;
+        border-radius: 5px;
+        background-color: black;
+        font-family: sans-serif;
+    }
+    h1{
+        color:ghostwhite;
+    }
+form input,textarea{
+    width: 100%;
+    margin: 7px 0;
+}
+form input{
+    height: 18px;
+}
+.social-media{
+    margin :6px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+h2{
+font-family: 'Times New Roman', Times, serif;
+padding: auto;
+}
+#arun{
+height: 10px;
+width:10px;
+}
+
+        }
+    
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+ 
+ 
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/" class="%= req.originalUrl==='/'? 'active':'' %>"> Home </a></li>
+                <li><a href="/About-me" class="%=req.originalUrl==='/About-me'? 'active':''%>"> About-me </a></li>
+                <li><a href="/MyBio" class="%=req.originalUrl==='/Mybio'? 'active':''%>"> MyBio </a></li>
+                <li><a href="/Contact-me"class="%=req.originalUrl==='/Contact-me'? 'active':''%>"> Contact-me </a></li>
+            </ul>
+        </nav>
+    </header>
+<body>
+
+    <div class="form-container">
+        <h1>Contact me</h1>
+
+        <form method="post" action="mailto:mrtonystark6380@gmail.com">
+
+                <label>Name : </label>
+                <input type="text" required><br><br>
+
+                <label>===> : </label>
+                <input class="se" type="submit"  value="Click here to msg"><br><br>
+        </form>
+</div>
+
+<h1>Social Media Icons :</h1>
+
+<ul class="social-media">
+
+        <div class="icon"><i class="fab fa-facebook"></div><li><a id="arun" href="https://www.facebook.com/thala.as.18?mibextid=ZbWKwL"><span><h2>Facebook</h2></span></a><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIIAAACCCAMAAAC93eDPAAAAYFBMVEU6VZ////8sTJzV2ejO0+QwTp3c4OskR5kaQJYgRJg3U568xNvh5O76+/2tttM0UZ1pe7Lw8vdCW6OIlcCjrM22vtiSn8ZGXqOBj73Dyt9xgbV2hrecp8pecq5XbKoIOZQUBwGCAAABuElEQVR4nO3Z224CIRAG4C2CLOxJth5rq+//lq1JLxRZl5CZ2Tb5/2sSvgyCDFtVCIIgCIIgyGLxg1HWujhKbH7jxs37tt81cfYyBq8ORx26t1ROTkKgql1ITn9LI0Awqp+cX4bgPqYrIELwav8SIEBwLxdBglA3cwJugt3OCpgJZjMv4CX48fVeECC4+R8CM2HYpE9kQUJ9yhFwEvyYJeAkqIwNyU1YL03IXQfG+4I5T07atffpLRdh8mzW59Hf5adeXAQ3sSU/rfGP4RJUTqcFNduMT1Gr5CqI3FV/Y5KEr0GQkKxC4Fv4XMJqkDQkCdoICkAAAQQQQPhnBM6/KaMeUycJzqo4ZDcI2+soqa46xIO0Xl2oClNnNi7PuVCVIVn3nIQDWRVKCS1ZH1FM0GRP0MWEhqyfKyZslyccyQ7MYgLZniwn0DXWpYSO7nWhlNDS9bmlhNPyVdjRfRwrJezpLjGlhDPdg0MpgfDNo5DQEV7kCgnhujihJXyAc806SupjRIgHkT69KvuYa/IGXUejWD+Z/91WBgQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAA4ZZvnEUeokJybbAAAAAASUVORK5CYII="></a></li> <br><br></i></div>
+
+        <div class="icon"><i class="fab fa-twitter"><li><a href="https://twitter.com/mr_dont_care__?t=VLMFSg2sWLYQI3m4UBr1rg&s=09"><span><h2>Twitter</h2></span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK0AAACCCAMAAAADi7iSAAAAgVBMVEUdofP///////0VoPRJrO8covINnvP7//19v+9wvO4AmO90u+4Am/Pq9/sAlO19we7D5foAkO1aru4AlfLR6vctpfFKq/KAxe9Lru32+vvf8/xjtO2r1/O24vee0u/I5fap1/mRyeoAh+3I7PmTyO+42fBjs+YAguHx//2c1Pfl8Pn46PSNAAADLElEQVR4nO2Z7ZaaMBBAyYSEjw0iAgqaFberu5X3f8AGBOsHEf/Uoe3cw9Ej4cd1GGYS4jgEQRAEQRAEQRAEQRAEQRAEQRAEQfwXiIej/Ex7nRCnky/wsiAsvqIZcnty81u0B18Wj//hn4TL4UgJwaVyStbhz6RsXJWcrdkCK7i8WLmDA0Ju4njV24L249hc7a5i/z1zcWwFT7YsTuVANvCkYjdImcbm6y1FCi0vdhlUu6W8s5XBbg1XrlDq3a6CTA/fixcg3xgAMDe9G1Ha+F2HFpoDPn6kIVZsG1vGss/8VkBt25FL2cYWIKqybImj28S2VbmxlU64vc3aixAj1QRjezKoq6vMlUEd2WzZHqveysDz2uBCtMwvzquV1dXzAokj6zj5Up9SoawP3OF90Oy2oJc5XitTfX5CtlgUffrabKGMPhSaq+mkW+hFDHslW6y28zzntonFC3TlqipPpanh8BW0bDQM685nWKYN3NSqOXSV1Xx7HQDDuvMQ09bdb2b7w3mmBT22hwzV1vSyQzL7ju78bL6otqY7rLXWJnOt0bz6B4Bt27X/cdk2TaoQr9h284SHmfpb1jS8rw3iksyRfneHn4ttlKA13RaR66dMO1vUamuWhc089m+xNSuc8Hvepe2YNbqtQYTvP+Gp3J2ErYluBGy8LJgLSnxbIUKz1MqeaBBZNQFbKdMkccuR2AIrQ4XYGnr8o0F7D2Pb9JByAq5OmLWd93HetqN3y3gE5MYvYbQmgLf1BZ9AdHkSeaMFDMoCb0F2hQyCcqQimFVFMYE8aJFONDLFNYvdAndGc0kRn17KWVwRX9AMoYp1XUdW26gOJpK1J0SeO0fLkwbs2Gw5YCteIBaLhR5MBWDReiUnIMtljyo8NrzSNU+ftmykvJg89jve9pZeVmaf2WoS1YAvrkI4mAe1DEM1gTQwtku922X9VHzAFjy9n87jxZVKtmB/M8OYUALvleItQvBNHAfRQGOo/NjQbphiW15g6kJSDkRVp8rgjG1bI1AUbuHegLTL9ARc8nuwpWycU1OcPyd3+wmCIAiCIAiCIAiCIAiCIAiCIAjiX+AX85AlsG55+DIAAAAASUVORK5CYII="></a></li> <br><br>
+
+        <div class="icon"><i class="fab fa-instagram"></div><li><a href="https://instagram.com/im_arun_._?igshid=OTk0YzhjMDVIZA=="><span><h2>Instagram</h2></span><img src="data:image/jpeg;base64,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"></a></li> <br><br></i></div>
+
+</body>
+
+</html>
